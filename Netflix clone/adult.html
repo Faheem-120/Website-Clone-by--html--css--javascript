@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        header {
+            background-color: #000;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 100px;
+        }
+
+        .menu ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu ul li {
+            margin-right: 20px;
+            cursor: pointer;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .hero {
+            background-image: url('/images/bg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #e50914;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 40px 20px;
+        }
+
+        .movies {
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 28px;
+            line-height: 110px;
+            margin-bottom: 20px;
+        }
+
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .movie img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/index.html"><img src="/images/download.png" alt="Netflix Logo"></a>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/tv-show.html">TV Shows</a></li>
+                    <li><a href="/movies.html">Movies</a></li>
+                    <li><a href="#">List</a></li>
+                    <li><a href="/adult.html">18+</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="movies">
+            <h2>18+ Section</h2>
+            <div class="movie-grid">
+                <div class="movie">
+                    <img src="/images/18+/movie1.jpg" alt="Movie 1">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/movie2.jpg" alt="Movie 2">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/movie3.jpg" alt="Movie 3">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/movie4.jpg" alt="Movie 4">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 5">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 6">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 7">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 8">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 9">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 10">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 11">
+                </div>
+                <div class="movie">
+                    <img src="/images/18+/" alt="Movie 12">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Netflix Clone by Faheem Qasim</p>
+    </footer>
+</body>
+
+</html>
